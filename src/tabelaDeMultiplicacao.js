@@ -1,9 +1,13 @@
-function nomeDaFuncao() { 
-    // Substitua "nomeDaSuaFuncao" por um nome mais apropriado
-    // TODO: escrever dois loops aninhados para desenhar o array bidimensional e monstar o restante da tabela no console.
-    let x = [];
-    for (let i = 0; i <= 10; i++) {
-        x[i] = [];
+function tabuada(number) { 
+    let output = [];
+    for (let counter = 0; counter <= number; counter++) {
+        output[counter] = [];
+        for (let subcounter = 0; subcounter <= number; subcounter++){
+            let mult = counter * subcounter;
+            output[counter].push(mult);
+        }
     }
-    console.table(x)
+    console.table(output)
 }
+
+tabuada(12)
